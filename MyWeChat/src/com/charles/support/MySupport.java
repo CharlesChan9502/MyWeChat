@@ -14,7 +14,7 @@ public class MySupport extends WechatSupport{
 	@Override
 	protected void click() {
 		// TODO Auto-generated method stub
-		
+		responseText("感谢你的赞");
 	}
 
 	@Override
@@ -51,6 +51,8 @@ public class MySupport extends WechatSupport{
 	protected void onText() {
 		// TODO Auto-generated method stub
 		responseText("hey man!");
+		responseImage("G8XuGMlwfqJyivRJ5Viis6gLKxCNZ8PMv8Rv_9aIkB-T6GKotyP_ozyduYY6nNWB");
+		responseText(wechatRequest.getContent());
 	}
 
 	@Override
