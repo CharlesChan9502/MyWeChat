@@ -19,8 +19,8 @@ public class MySupport extends WechatSupport{
 
 	@Override
 	protected void location() {
-		// TODO Auto-generated method stub
-		
+		//用户同意获取地理位置
+		System.out.println("您的纬度："+wechatRequest.getLatitude()+",/n经度："+wechatRequest.getLongitude()+",/n精度："+wechatRequest.getPrecision());
 	}
 
 	@Override
@@ -43,8 +43,8 @@ public class MySupport extends WechatSupport{
 
 	@Override
 	protected void onLocation() {
-		// TODO Auto-generated method stub
-		
+		//用户发送位置触发
+		responseText("您的纬度："+wechatRequest.getLocation_X()+",\n经度："+wechatRequest.getLocation_Y()+",\n地名："+wechatRequest.getLabel());
 	}
 
 	@Override
@@ -94,7 +94,7 @@ public class MySupport extends WechatSupport{
 	@Override
 	protected void scan() {
 		// TODO Auto-generated method stub
-		
+		System.out.println("您已关注查尔斯风号码："+wechatRequest.getTicket());
 	}
 
 	@Override
@@ -112,7 +112,7 @@ public class MySupport extends WechatSupport{
 	@Override
 	protected void subscribe() {
 		// TODO Auto-generated method stub
-		
+		responseText("欢迎关注查尔斯风测试号");
 	}
 
 	@Override
@@ -124,7 +124,7 @@ public class MySupport extends WechatSupport{
 	@Override
 	protected void unSubscribe() {
 		// TODO Auto-generated method stub
-		
+		System.out.println("再见！");
 	}
 
 	@Override
