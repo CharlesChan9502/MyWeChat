@@ -66,8 +66,8 @@ public class MenuUtil {
  
         MenuButton mb1 = new MenuButton();
         mb1.setType(EventType.view);
-        mb1.setName("百度搜索");
-        mb1.setUrl("http://www.baidu.com");
+        mb1.setName("测试网页");
+        mb1.setUrl("http://4c76f283.ngrok.natapp.cn/MyWeChat/test.jsp");
  
         MenuButton mb2 = new MenuButton();
         mb2.setType(EventType.view);
@@ -118,8 +118,8 @@ public class MenuUtil {
  
     public static void main(String[] args) throws Exception {
         MenuUtil menuUtil = new MenuUtil();
-//        menuUtil.createMenu();
+        menuUtil.createMenu();
 //      menuUtil.deleteMenu();
-      menuUtil.queryMenu();
+//      menuUtil.queryMenu();
     }
 }
