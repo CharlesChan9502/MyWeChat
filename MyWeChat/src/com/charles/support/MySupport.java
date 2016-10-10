@@ -3,7 +3,6 @@ package com.charles.support;
 import javax.servlet.http.HttpServletRequest;
 
 import org.sword.wechat4j.WechatSupport;
-import org.sword.wechat4j.message.CustomerMsg;
 
 public class MySupport extends WechatSupport{
 
@@ -15,11 +14,11 @@ public class MySupport extends WechatSupport{
 	@Override
 	protected void click() {
 		// TODO Auto-generated method stub
-//		responseText("感谢你的赞");
-		String openId = wechatRequest.getFromUserName();
-		CustomerMsg customerMsg = new CustomerMsg(openId);
+		responseText("感谢你的赞");
+//		String openId = wechatRequest.getFromUserName();
+//		CustomerMsg customerMsg = new CustomerMsg(openId);
 		//发送文本
-		customerMsg.sendText("666666666"); 
+//		customerMsg.sendText("666666666"); 
 	}
 
 	@Override
