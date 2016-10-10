@@ -22,12 +22,12 @@ public class WeChatServlet extends HttpServlet{
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
 		
-		SignatureParam param = new SignatureParam(req);
-        String signature = param.getSignature();
-        String timestamp = param.getTimestamp();
-        String nonce = param.getNonce();
-        String echostr = param.getEchostr();
-        System.out.println("++++++"+signature+"______"+timestamp+"______"+nonce+"______"+echostr);
+//		SignatureParam param = new SignatureParam(req);
+//        String signature = param.getSignature();
+//        String timestamp = param.getTimestamp();
+//        String nonce = param.getNonce();
+//        String echostr = param.getEchostr();
+//        System.out.println("++++++"+signature+"______"+timestamp+"______"+nonce+"______"+echostr);
 		
 		
 		MySupport mySupport = new MySupport(req);
